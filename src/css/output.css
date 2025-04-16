@@ -264,9 +264,6 @@
   .z-20 {
     z-index: 20;
   }
-  .z-30 {
-    z-index: 30;
-  }
   .z-auto {
     z-index: auto;
   }
@@ -383,9 +380,6 @@
   }
   .mt-28 {
     margin-top: calc(var(--spacing) * 28);
-  }
-  .ml-0 {
-    margin-left: calc(var(--spacing) * 0);
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
@@ -507,6 +501,9 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-44 {
+    height: calc(var(--spacing) * 44);
+  }
   .h-screen {
     height: 100vh;
   }
@@ -528,6 +525,9 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-44 {
+    width: calc(var(--spacing) * 44);
+  }
   .w-52 {
     width: calc(var(--spacing) * 52);
   }
@@ -536,6 +536,9 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
   }
   .w-fit {
     width: fit-content;
@@ -937,6 +940,9 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .space-y-reverse {
     :where(& > :not(:last-child)) {

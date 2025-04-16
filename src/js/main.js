@@ -125,7 +125,7 @@ async function getYoutube() {
 }
 getYoutube()
 
-let urlPopular = `https://www.googleapis.com/youtube/v3/videos?key=${keyUrl}&chart=mostPopular&part=snippet`
+let urlPopular = `https://www.googleapis.com/youtube/v3/videos?key=${keyUrl}&chart=mostPopular&part=snippet&maxResults=10`
 
 async function popular() {
     let response = await fetch(urlPopular)
@@ -133,7 +133,21 @@ async function popular() {
     console.log(data)
 
     data.items.forEach(element => {
-        console.log(element.snippet.description)
+        let thumbnile = element.snippet.thumbnails.high.url
+        let title = element.snippet.title
+        let channelTitle = element.snippet.channelTitle
+
+        let divGambar = document.createElement("div")
+        divGambar.innerHTML = `
+        <div class="w-80">
+            <img src=${thumbnile} alt="" class="w-80 h-44 object-cover rounded-lg">
+            <p>${title}<p>
+            <p>${channelTitle}<p>
+        </div>
+        `
+
+        console.log(thumbnile)
+        playlistVideo.append(divGambar)
     })
 }
 
