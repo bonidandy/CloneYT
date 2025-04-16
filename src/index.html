@@ -20,169 +20,12 @@
     <nav>
         <div class="flex ">
             <!-- sidebar -->
-            <div id="sideBar"
-                class=" h-screen w-60 bg-white ml-[-250px] z-20 items-start transition-all duration-300 ease-in-out flex justify-center overflow-hidden ">
-                <div class="w-52">
-                    <div class="flex">
-                        <div id="buttonBarSide" class="mt-1.5">
-                            <button class="fa-solid fa-bars fa-lg cursor-pointer border-none px-3 py-5">
-                            </button>
-                        </div>
-
-                        <button class="flex items-center cursor-pointer ml-3 mt-1" id="buttonYoutubeBar">
-                            <div class="fa-brands fa-youtube fa-2xl text-red-600"></div>
-                            <p class=" text-lg font-[roboto]  font-bold tracking-tighter">YouTube<sup
-                                    class="text-[rgb(117,96,96)] font-normal text-xs">ID</sup></p>
-                        </button>
-                    </div>
-
-                    <!-- bataas -->
-                    <div class="overflow-y-scroll h-screen w-fit">
-
-                        <div class="flex flex-wrap justify-center pt-4">
-                            <button
-                                class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><span
-                                    class="material-symbols-outlined justify-self-start pl-2">
-                                    home
-                                </span> <span class="pl-5 text-sm">Beranda</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/rocket_launch_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Short</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/subscriptions_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Subcscription</span></button>
-                        </div>
-
-                        <div class="border-b-1 pt-3 border-[#E5E5E5]"></div>
-
-                        <button
-                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton mt-3 "><span
-                                class="pl-3 font-medium text-base">Anda</span>
-                            <img src="../public/img/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                class="pl-1"></button>
-
-                        <div class="pt-1 flex flex-wrap justify-center">
-                            <button
-                                class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
-                                    src="../public/img/history_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">History</span></button>
-
-                            <button
-                                class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
-                                    src="../public/img/playlist_play_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Playlist</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/smart_display_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Video anda</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/schedule_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Tonton nanti</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/thumb_up_22dp_1F1F1F_FILL0_wght400_GRAD0_opsz24 (1).svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Video yang disukai</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/content_cut_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Klip anda</span></button>
-                        </div>
-
-                        <div class="border-b-1 pt-3 border-[#E5E5E5]"></div>
-
-                        <p class="pl-2 pt-3 font-medium text-base">Subscription</p>
-                        <div class="pt-1 flex flex-wrap justify-center" id="subss">
-
-                        </div>
-
-                        <div class="border-b-1 pt-3 border-[#E5E5E5]"></div>
-
-                        <p class="pl-2 pt-3 font-medium text-base">Eksplorasi</p>
-                        <div class="pt-1 flex flex-wrap justify-center">
-                            <button
-                                class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
-                                    src="../public/img/local_fire_department_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                                    alt="" class="pl-2"> <span class="pl-5 text-sm">Trending</span></button>
-
-                            <button
-                                class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
-                                    src="../public/img/headphones_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Musik</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/movie_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Film</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/sports_esports_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                                    alt="" class="pl-2"> <span class="pl-5 text-sm">Gamer</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/newspaper_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Berita</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/trophy_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Olahraga</span></button>
-                        </div>
-
-                        <div class="border-b-1 pt-3 border-[#E5E5E5]"></div>
-
-                        <p class="pl-2 pt-3 font-medium text-base">Lainnya dari Youtube</p>
-                        <div class="pt-1 flex flex-wrap justify-center">
-                            <button
-                                class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
-                                    src="../public/img/local_fire_department_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                                    alt="" class="pl-2"> <span class="pl-5 text-sm">Youtube Premium</span></button>
-
-                            <button
-                                class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
-                                    src="../public/img/headphones_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Youtube Studio</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/movie_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Youtube Musik</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/sports_esports_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                                    alt="" class="pl-2"> <span class="pl-5 text-sm">Youtube Kids</span></button>
-                        </div>
-
-                        <div class="border-b-1 pt-3 border-[#E5E5E5]"></div>
-
-                        <div class="pt-1 flex flex-wrap justify-center">
-                            <button
-                                class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
-                                    src="../public/img/settings_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Setelan</span></button>
-
-                            <button
-                                class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
-                                    src="../public/img/flag_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">History Laporan</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/help_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Bantuan</span></button>
-                            <button
-                                class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
-                                <img src="../public/img/feedback_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
-                                    class="pl-2"> <span class="pl-5 text-sm">Kirim Masukan</span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- buat background transparant ketika sidebar di click -->
-            <div id="backgroundChange" class="z-10 hidden opacity-40 fixed top-0 left-0 h-screen w-full bg-black"></div>
 
             <!-- tampilan utama -->
-            
-                <div class="flex items-center fixed">
+            <div class="fixed w-full bg-white">
+                <div class="flex items-center ">
                     <div id="buttonBar">
                         <button
                             class=" ml-1 fa-solid fa-bars fa-lg cursor-pointer rounded-full hover:bg-[#F2F2F2] border-none px-3 py-5">
@@ -193,7 +36,7 @@
                         <p class=" text-lg font-[roboto]  font-bold tracking-tighter">YouTube<sup
                                 class="text-[rgb(117,96,96)] font-normal text-xs">ID</sup></p>
                     </button>
-                    <div class="flex" id="parentInput">
+                    <div class="flex mt-1" id="parentInput">
                         <div class="hidden items-center ml-5" id="arrowBack">
                             <button><i class="fa-solid fa-arrow-left fa-lg cursor-pointer"></i></button>
                         </div>
@@ -218,16 +61,248 @@
                         <img src="../public/img/f1b949ff0694ee4d2c7c219c5237d6be.jpg" alt="profile"
                             class="rounded-full">
                     </button>
-
-
                 </div>
 
-            
+                <div class="flex pt-5">
+                    <button class="bg-blue-500 pr-2 pl-2 h-8 rounded-lg cursor-pointer category-button">Semua</button>
+                    <button class="bg-blue-500 pr-2 pl-2 h-8 rounded-lg cursor-pointer category-button">Game</button>
+                    <button class="bg-blue-500 pr-2 pl-2 h-8 rounded-lg cursor-pointer category-button">Live</button>
+                    <button class="bg-blue-500 pr-2 pl-2 h-8 rounded-lg cursor-pointer category-button">Podcast</button>
+                    <button class="bg-blue-500 pr-2 pl-2 h-8 rounded-lg cursor-pointer category-button">Musik</button>
+                    <button class="bg-blue-500 pr-2 pl-2 h-8 rounded-lg cursor-pointer category-button">Mix</button>
+                    <button class="bg-blue-500 pr-2 pl-2 h-8 rounded-lg cursor-pointer category-button">Game petualangan
+                        aksi</button>
+                    <button class="bg-blue-500 pr-2 pl-2 h-8 rounded-lg cursor-pointer category-button">Baru
+                        diupload</button>
+                    <button
+                        class="bg-blue-500 pr-2 pl-2 h-8 rounded-lg cursor-pointer category-button">Ditonton</button>
+                    <button class="bg-blue-500 pr-2 pl-2 h-8 rounded-lg cursor-pointer category-button">Baru untuk
+                        Anda</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex">
+        <div id="sideBar"
+            class="h-screen fixed w-60 bg-white ml-[-250px] z-20 items-start transition-all duration-300 ease-in-out flex justify-center overflow-hidden ">
+            <div class="w-52">
+                <div class="flex">
+                    <div id="buttonBarSide" class="mt-1.5">
+                        <button class="fa-solid fa-bars fa-lg cursor-pointer border-none px-3 py-5">
+                        </button>
+                    </div>
+
+                    <button class="flex items-center cursor-pointer ml-3 mt-1" id="buttonYoutubeBar">
+                        <div class="fa-brands fa-youtube fa-2xl text-red-600"></div>
+                        <p class=" text-lg font-[roboto]  font-bold tracking-tighter">YouTube<sup
+                                class="text-[rgb(117,96,96)] font-normal text-xs">ID</sup></p>
+                    </button>
+                </div>
+
+                <!-- bataas -->
+                <div class="overflow-y-scroll h-screen w-fit">
+                    <!-- home -->
+                    <div class="flex flex-wrap justify-center pt-4">
+                        <button
+                            class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><span
+                                class="material-symbols-outlined justify-self-start pl-2">
+                                home
+                            </span> <span class="pl-5 text-sm">Beranda</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/rocket_launch_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Short</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/subscriptions_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Subcscription</span></button>
+                    </div>
+
+                    <div class="border-b-1 pt-3 border-[#E5E5E5]"></div>
+
+                    <button
+                        class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton mt-3 "><span
+                            class="pl-3 font-medium text-base">Anda</span>
+                        <img src="../public/img/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                            class="pl-1"></button>
+
+                    <!-- history -->
+                    <div class="pt-1 flex flex-wrap justify-center">
+                        <button
+                            class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
+                                src="../public/img/history_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">History</span></button>
+
+                        <button
+                            class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
+                                src="../public/img/playlist_play_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Playlist</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/smart_display_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Video anda</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/schedule_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Tonton nanti</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/thumb_up_22dp_1F1F1F_FILL0_wght400_GRAD0_opsz24 (1).svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Video yang disukai</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/content_cut_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Klip anda</span></button>
+                    </div>
+
+                    <div class="border-b-1 pt-3 border-[#E5E5E5]"></div>
+
+                    <p class="pl-2 pt-3 font-medium text-base">Subscription</p>
+                    <div class="pt-1 flex flex-wrap justify-center" id="subss">
+
+                    </div>
+
+                    <div class="border-b-1 pt-3 border-[#E5E5E5]"></div>
+
+                    <p class="pl-2 pt-3 font-medium text-base">Eksplorasi</p>
+                    <div class="pt-1 flex flex-wrap justify-center">
+                        <button
+                            class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
+                                src="../public/img/local_fire_department_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="" class="pl-2"> <span class="pl-5 text-sm">Trending</span></button>
+
+                        <button
+                            class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
+                                src="../public/img/headphones_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Musik</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/movie_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Film</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/sports_esports_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Gamer</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/newspaper_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Berita</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/trophy_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Olahraga</span></button>
+                    </div>
+
+                    <div class="border-b-1 pt-3 border-[#E5E5E5]"></div>
+
+                    <p class="pl-2 pt-3 font-medium text-base">Lainnya dari Youtube</p>
+                    <div class="pt-1 flex flex-wrap justify-center">
+                        <button
+                            class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
+                                src="../public/img/local_fire_department_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                                alt="" class="pl-2"> <span class="pl-5 text-sm">Youtube Premium</span></button>
+
+                        <button
+                            class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
+                                src="../public/img/headphones_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Youtube Studio</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/movie_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Youtube Musik</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/sports_esports_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Youtube Kids</span></button>
+                    </div>
+
+                    <div class="border-b-1 pt-3 border-[#E5E5E5]"></div>
+
+                    <!-- setelan -->
+                    <div class="pt-1 flex flex-wrap justify-center">
+                        <button
+                            class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
+                                src="../public/img/settings_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Setelan</span></button>
+
+                        <button
+                            class="cursor-pointer w-52 h-9  rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton"><img
+                                src="../public/img/flag_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="pl-2">
+                            <span class="pl-5 text-sm">History Laporan</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/help_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Bantuan</span></button>
+                        <button
+                            class="cursor-pointer w-52 h-9 rounded-md flex items-center hover:bg-[#d4d3d3] sidebarButton ">
+                            <img src="../public/img/feedback_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                                class="pl-2"> <span class="pl-5 text-sm">Kirim Masukan</span></button>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div id="backgroundChange" class="z-10 hidden opacity-40 fixed top-0 left-0 h-screen w-full bg-black"></div>
+
+        <div>
+            <div class="mt-28" id="playlist-video">
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+                <p>kontenn</p>
+            </div>
+        </div>
+    </div>
 
 
-    </nav>
+
     <script src="./js/main.js" type="module"></script>
 </body>
 

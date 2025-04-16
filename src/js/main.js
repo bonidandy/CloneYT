@@ -17,10 +17,11 @@ let backgroundChange = document.getElementById("backgroundChange")
 let titleChannel = document.querySelectorAll(".titleChannel")
 let gambarChannel = document.querySelectorAll(".gambarChannel")
 let subss = document.getElementById("subss")
+let lastScrollY = 0;
 
 
 toggleInput.addEventListener("click", function (event) {
-    console.log("menambahkan class hidden")
+    // console.log("menambahkan class hidden")
     event.stopPropagation()
     arrowBack.classList.remove("hidden")
     arrowBack.classList.add("flex")
@@ -39,11 +40,15 @@ buttonBar.addEventListener('click', function (event) {
     sideBar.classList.toggle("ml-[-250px]")
     buttonBar.classList.add("z-20", "transition", "delay-150")
     backgroundChange.classList.remove("hidden")
+    // playlistVideo.classList.add("fixed")
     event.stopPropagation()
+    lastScrollY = window.scrollY
+    document.body.classList.add("overflow-hidden");
 })
 
 document.addEventListener("click", function () {
-    console.log("menghapus class hidden")
+    // console.log("menghapus class hidden")
+    playlistVideo.classList.remove("fixed")
     userInput.classList.add("hidden")
     arrowBack.classList.add("hidden")
     toggleInput.classList.remove("hidden")
@@ -55,7 +60,7 @@ document.addEventListener("click", function () {
     kacaPembesar.classList.add("hidden")
     sideBar.classList.add("ml-[-250px]")
     backgroundChange.classList.add("hidden")
-
+    document.body.classList.remove("overflow-hidden");
 })
 
 userInput.addEventListener("click", function (event) {
@@ -82,26 +87,34 @@ sidebarButton.forEach(button => {
 
 import { dataUsername } from "./data.js"
 
-console.log(dataUsername[0])
+// console.log(dataUsername[0])
 
 let keyUrl = `AIzaSyDF93QA3IQnBmEAPR1Qm3OpZB5NV5ZOfi8`
 
 let ids = dataUsername.map(data => data.id).join(",")
-let url = `https://www.googleapis.com/youtube/v3/channels?key=${keyUrl}&id=${ids}&part=snippet`
-let urlPopular = `https://www.googleapis.com/youtube/v3/videos?key=${keyUrl}&chart=mostPopular`
 
+let url = `https://www.googleapis.com/youtube/v3/channels?key=${keyUrl}&id=${ids}&part=snippet`
+// let testing = `https://www.googleapis.com/youtube/v3/videos?key=${keyUrl}&id=sR7rMP4GXuE&part=snippet`
+
+// async function testingVid() {
+//     let response = await fetch(testing)
+//     let data = await response.json()
+//     console.log(data)
+// }
+
+// testingVid()
 
 async function getYoutube() {
     let response = await fetch(url)
-    let data = await response.json() 
-    console.log(data)
+    let data = await response.json()
+    // console.log(data)
 
     data.items.forEach(element => {
         let titleChannel = element.snippet.title
         let gambarChannel = element.snippet.thumbnails.default.url
-        console.log(titleChannel)
+        // console.log(titleChannel)
         // console.log(gambarChannel)
-        
+
         let divBaru = document.createElement("div")
         divBaru.innerHTML = `<button
                                  class="cursor-pointer w-52 h-9 flex items-center hover:bg-[#d4d3d3] sidebarButton"><img src="${gambarChannel}" alt=""
@@ -110,6 +123,22 @@ async function getYoutube() {
         subss.append(divBaru)
     });
 }
+getYoutube()
+
+let urlPopular = `https://www.googleapis.com/youtube/v3/videos?key=${keyUrl}&chart=mostPopular&part=snippet`
+
+async function popular() {
+    let response = await fetch(urlPopular)
+    let data = await response.json()
+    console.log(data)
+
+    data.items.forEach(element => {
+        console.log(element.snippet.description)
+    })
+}
+
+popular()
+
 
 // async function getPopular() {
 //     let response = await fetch(urlPopular)
@@ -134,7 +163,18 @@ async function getYoutube() {
 // getPopular()
 
 // profile()
-getYoutube()
 
+let categoryButton = document.querySelectorAll(".category-button")
 
+categoryButton.forEach(btn => {
+    btn.addEventListener("click", function () {
+        console.log("pantek")
+    })
+})
+
+let playlistVideo = document.getElementById("playlist-video")
+
+// playlistVideo.addEventListener("click", function(){
+
+// })
 
