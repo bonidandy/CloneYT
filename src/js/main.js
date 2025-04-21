@@ -125,24 +125,47 @@ async function getYoutube() {
 }
 getYoutube()
 
-let urlPopular = `https://www.googleapis.com/youtube/v3/videos?key=${keyUrl}&chart=mostPopular&part=snippet&maxResults=10`
+let urlPopular = `https://www.googleapis.com/youtube/v3/videos?key=${keyUrl}&chart=mostPopular&part=snippet,statistics&maxResults=10`
 
 async function popular() {
     let response = await fetch(urlPopular)
     let data = await response.json()
     console.log(data)
 
-    data.items.forEach(element => {
+    data.items.forEach(async element => {
         let thumbnile = element.snippet.thumbnails.high.url
         let title = element.snippet.title
         let channelTitle = element.snippet.channelTitle
+        let viewCount = element.statistics.viewCount
+        let channelId = element.snippet.channelId
+
+        let urlChannelPopuler = `https://www.googleapis.com/youtube/v3/channels?key=${keyUrl}&part=snippet&id=${channelId}`
+
+        let responseChannelPopuler = await fetch(urlChannelPopuler)
+        let dataChannelPopuler = await responseChannelPopuler.json()
+        // console.log(dataChannelPopuler)
+        let profileChannel = dataChannelPopuler.items[0].snippet.thumbnails.high.url
+
+
+        const formatter = Intl.NumberFormat("en", { notation: "compact" });
+        function formatCompactNumber(number) {
+            const formatter = Intl.NumberFormat("en", { notation: "compact" });
+            return formatter.format(number);
+        }
 
         let divGambar = document.createElement("div")
         divGambar.innerHTML = `
         <div class="w-80">
             <img src=${thumbnile} alt="" class="w-80 h-44 object-cover rounded-lg">
-            <p>${title}<p>
-            <p>${channelTitle}<p>
+        <div class="flex">
+                <img src=${profileChannel} alt="" class="w-10 h-10 rounded-full">
+                <div class="pl-1"> 
+                    <p>${title}<p>
+                    <p>${channelTitle}<p>
+                    <p>${formatCompactNumber(viewCount)}<p>
+                </div>
+            </div>
+            
         </div>
         `
 
