@@ -408,6 +408,12 @@
   .box-content {
     box-sizing: content-box;
   }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
   .line-clamp-none {
     overflow: visible;
     display: block;
@@ -1181,8 +1187,14 @@
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
+  .bg-\[\#626262\] {
+    background-color: #626262;
+  }
   .bg-\[\#d4d3d3\] {
     background-color: #d4d3d3;
+  }
+  .bg-\[\#rgb\(98\,98\,98\)\] {
+    background-color: #rgb(98,98,98);
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
@@ -1389,6 +1401,9 @@
   .px-3\.5 {
     padding-inline: calc(var(--spacing) * 3.5);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
@@ -1397,6 +1412,9 @@
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+  .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
   }
   .pt-1 {
     padding-top: calc(var(--spacing) * 1);
@@ -1415,9 +1433,6 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
-  }
-  .pb-10 {
-    padding-bottom: calc(var(--spacing) * 10);
   }
   .pl-1 {
     padding-left: calc(var(--spacing) * 1);
@@ -1594,6 +1609,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-\[\#626262\] {
+    color: #626262;
   }
   .text-\[rgb\(117\,96\,96\)\] {
     color: rgb(117,96,96);

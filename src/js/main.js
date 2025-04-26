@@ -157,15 +157,21 @@ async function popular() {
         divGambar.innerHTML = `
         <div class="w-80">
             <img src=${thumbnile} alt="" class="w-80 h-44 object-cover rounded-lg">
-        <div class="flex">
+        <div class="flex pt-3">
                 <img src=${profileChannel} alt="" class="w-10 h-10 rounded-full">
-                <div class="pl-1"> 
-                    <p>${title}<p>
-                    <p>${channelTitle}<p>
-                    <p>${formatCompactNumber(viewCount)}<p>
+                <div class="flex justify-between w-full" > 
+                    <div class="pl-1"> 
+                        <p class="font-semibold line-clamp-2">${title}<p>
+                        <div class="pt-1 text-[#626262] text-sm">
+                            <p>${channelTitle}<p>
+                            <p>${formatCompactNumber(viewCount)} views<p>
+                        </div>
+                    </div>
+                    <div class="pt-1 cursor-pointer">
+                        <p>&#8942;</p>
+                    <div>
                 </div>
             </div>
-            
         </div>
         `
 
