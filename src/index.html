@@ -36,7 +36,7 @@
                         <p class=" text-lg font-[roboto]  font-bold tracking-tighter">YouTube<sup
                                 class="text-[rgb(117,96,96)] font-normal text-xs">ID</sup></p>
                     </button>
-                    <div class="flex mt-1" id="parentInput">
+                    <div class="flex mt-1 ml-auto" id="parentInput">
                         <div class="hidden items-center ml-5" id="arrowBack">
                             <button><i class="fa-solid fa-arrow-left fa-lg cursor-pointer"></i></button>
                         </div>
@@ -49,6 +49,11 @@
                         </div>
                         <button id="button-input" class="ml-7"><i
                                 class="fa-solid fa-magnifying-glass fa-lg cursor-pointer py-4 px-2 hover:bg-[#d4d3d3] rounded-full"></i></button>
+                        <div class="hidden [@media(min-width:430px)]:block ">
+                            <button id="button-microphone"><i
+                            class="fa-solid fa-microphone fa-lg cursor-pointer py-4 px-2 hover:bg-[#d4d3d3] rounded-full"></i></button>
+                        </div>
+                        
                     </div>
                     <div class=" ml-2" id="buttonBuat">
                         <button
@@ -56,6 +61,10 @@
                             <i class="fa-solid fa-plus font-sans fa-sm"></i>
                             <span class="text-sm font-medium">Buat</span>
                         </button>
+                    </div>
+                    <div class="hidden [@media(min-width:430px)]:block">
+                        <button id="button-bell"><i
+                        class="fa-solid fa-bell fa-lg cursor-pointer py-4 px-2 hover:bg-[#d4d3d3] rounded-full"></i></button>
                     </div>
                     <button class="h-8 w-8  cursor-pointer ml-3" id="buttonProfile">
                         <img src="../public/img/f1b949ff0694ee4d2c7c219c5237d6be.jpg" alt="profile"

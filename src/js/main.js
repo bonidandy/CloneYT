@@ -10,6 +10,8 @@ let parentInput = document.getElementById("parentInput")
 let arrowBack = document.getElementById("arrowBack")
 let kacaPembesar = document.getElementById("kacaPembesar")
 let sideBar = document.getElementById("sideBar")
+let microphone = document.getElementById("button-microphone")
+let bell = document.getElementById("button-bell")
 
 // sidebar
 let sidebarButton = document.querySelectorAll(".sidebarButton")
@@ -34,6 +36,8 @@ toggleInput.addEventListener("click", function (event) {
     parentInput.classList.add("w-full")
     kacaPembesar.classList.remove("hidden")
     buttonYoutubeBar.classList.add("hidden")
+    microphone.classList.add("hidden")
+    bell.classList.add("hidden")
 })
 
 buttonBar.addEventListener('click', function (event) {
@@ -61,6 +65,8 @@ document.addEventListener("click", function () {
     sideBar.classList.add("ml-[-250px]")
     backgroundChange.classList.add("hidden")
     document.body.classList.remove("overflow-hidden");
+    microphone.classList.remove("hidden")
+    bell.classList.remove("hidden")
 })
 
 userInput.addEventListener("click", function (event) {
